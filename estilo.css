@@ -125,3 +125,37 @@ h1{
     display: block;
     margin: auto;
 }
+.client-banner{
+    background-image: url("cliente-banner.jpg");
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.client-menu-section div{
+    background-color: #38BF9B;
+    display: inline-block;
+    margin: 20px;
+    padding: 30px 80px;
+    border-radius: 30px;
+    box-shadow: 1px 1px 10px rgba(0,0,0,.3);
+    transition: all .5s;
+}
+.client-menu-section p{
+    color: white;
+    font-size: 15pt;
+    font-weight: 300;
+    text-align: center;
+}
+.client-menu-section img{
+    height: 100px;
+    width: auto;
+    display: block;
+    margin: auto;
+}
+.client-menu-section{
+    margin-top: -100px;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
