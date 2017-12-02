@@ -7,13 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Petshop Web - Login</title>
     <link rel="stylesheet" href="estilo.css">
+    <script src="login.js"></script>
 </head>
 
 <body>
     
     <h1>Petshop Web</h1>
     
-    <form action="">
+    <form action="home.html" onsubmit="return login()">
 
         <label for="inputEmail">Email</label>
         <input style="width: 100%" id="inputEmail" type="text" placeholder="Digite o seu email">
@@ -21,7 +22,7 @@
         <label for="inputSenha">Senha</label>
         <input style="width: 100%" id="inputSenha" type="text" placeholder="Digite a sua senha">
 
-        <button>Entrar</button>
+        <button type="submit">Entrar</button>
 
     </form>
 
