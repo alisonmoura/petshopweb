@@ -1,11 +1,16 @@
 body{
+    font-family: sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+.background-cachorro{
     background-image: url("fundo.jpg");
     background-repeat: no-repeat;
     background-position: right;
-    font-family: sans-serif;
 }
 
-form{
+.form-login{
 
     width: 300px;
     padding: 20px;
@@ -48,13 +53,75 @@ button{
     transition: max-width 0.3s linear;
 }
 
-button:hover{
-    cursor: pointer;
-    max-width: 200px;
-}
-
 h1{
     text-align: center;
     font-size: 40pt;
     margin-top: 100px;
+}
+
+.nav-bar{
+    background-color: #38BF9B;
+    height: 70px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.nav-bar ul{
+    list-style: none;
+    margin: 0px;
+    padding-top: 20px;
+    float: right;
+}
+
+.nav-bar li{
+    display: inline-block;
+    margin-right: 15px;
+    color: white;
+    font-size: 15pt;
+    font-weight: 300;
+}
+
+.home-banner{
+    background-image: url("home-banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    width: 100%;
+}
+
+.home-menu-section{
+    margin-top: -100px;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.home-menu-section div{
+    background-color: #38BF9B;
+    display: inline-block;
+    margin: 20px;
+    padding: 30px 80px;
+    border-radius: 30px;
+    box-shadow: 1px 1px 10px rgba(0,0,0,.3);
+    transition: all .5s;
+}
+
+.home-menu-section div:hover{
+    box-shadow: 3px 3px 20px rgba(0,0,0,.3);
+    transform: scale(1.1);
+}
+
+.home-menu-section p{
+    color: white;
+    font-size: 15pt;
+    font-weight: 300;
+    text-align: center;
+}
+
+.home-menu-section img{
+    height: 100px;
+    width: auto;
+    display: block;
+    margin: auto;
 }
