@@ -119,9 +119,26 @@ button:hover{
 .nav-bar li{
     display: inline-block;
     margin-right: 15px;
-    color: white;
+    color: black;
     font-size: 15pt;
     font-weight: 300;
+    transition: all .3s;
+}
+
+.nav-bar li:hover{
+    color: #38BF9B;
+}
+
+.nav-bar a:hover{
+    cursor: pointer;
+}
+
+.nav-bar .title{
+    font-size: 20pt;
+    font-weight: 300;
+    margin-top: 20px;
+    margin-left: 30px;
+    display: inline-block;
 }
 
 /* ========== SECTION IMAGE BUTTON ========== */
@@ -134,13 +151,13 @@ button:hover{
 .section-image-button div{
     background-color: #38BF9B;
     display: inline-block;
+    height: 80px;
+    width: 80px;
     margin: 20px;
-    padding: 30px 80px;
+    padding: 30px;
     border-radius: 100%;
     box-shadow: 1px 1px 10px rgba(0,0,0,.3);
     transition: all .5s;
-    height: 150px;
-    width: 100px;
     overflow: hidden;
 }
 
@@ -165,7 +182,7 @@ button:hover{
 
 .section-image-button img{
     height: auto;
-    width: 100px;
+    width: 50%;
     display: block;
     margin: auto;
     transition: all .3s;
