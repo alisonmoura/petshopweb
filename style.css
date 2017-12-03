@@ -84,7 +84,7 @@ button:hover{
 
 /* ========== LOGIN ========== */
 .background-login{
-    background-image: url("login-background.jpg");
+    background-image: url("images/login-background.jpg");
     background-repeat: no-repeat;
     background-position: right;
 }
@@ -182,9 +182,13 @@ button:hover{
 
 .section-image-button div:hover{
     box-shadow: 3px 3px 20px rgba(0,0,0,.3);
-    transform: scale(1.1);
+    transform: scale(1.1) rotate(45deg);
     border-radius: 30px;    
     cursor: pointer
+}
+
+.section-image-button div:active{
+    transform: scale(1.3) rotate(45deg);
 }
 
 .section-image-button p{
@@ -204,17 +208,18 @@ button:hover{
     width: 50%;
     display: block;
     margin: auto;
-    transition: all .3s;
+    transition: all .2s;
 }
 
 .section-image-button div:hover img{
-    padding-top: 20px;
-    transform: scale(1.5);
+    padding-top: 15px;
+    padding-right: 10px;
+    transform: scale(1.5) rotate(-45deg);
 } 
 
 /* ========== HOME ========== */
 .home-banner{
-    background-image: url("dog-staring.png");
+    background-image: url("images/dog-staring.png");
     background-repeat: no-repeat;
     /* background-size: cover; */
     background-position: bottom;
@@ -223,12 +228,12 @@ button:hover{
 }
 
 .home-menu-section{
-    margin-top: -100px;
+    margin-top: 10px;
 }
 
 /* ========== CLIENTS ========== */
 .client-banner{
-    background-image: url("clients-banner.jpg");
+    background-image: url("images/clients-banner.jpg");
     height: 300px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -236,4 +241,35 @@ button:hover{
 }
 .client-menu-section{
     margin-top: -100px;
+}
+
+/* ========== ANIMALS ========== */
+.animals-banner{
+    background-image: url("images/animals-banner.png");
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+.animals-menu-section{
+    margin-top: -100px;
+}
+
+/* ========== ANIMALS ========== */
+.services-banner{
+    background-image: url("images/services-banner.png");
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.services-menu-section{
+    margin-top: -100px;
+}
+
+/* ========== BACKGROUNDS ========== */
+.background-dog-staring{
+    background-image: url("/images/dog-staring.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
 }
