@@ -84,7 +84,7 @@ button:hover{
 
 /* ========== LOGIN ========== */
 .background-login{
-    background-image: url("images/login-background.jpg");
+    background-image: url("../images/login-background.jpg");
     background-repeat: no-repeat;
     background-position: right;
 }
@@ -219,7 +219,7 @@ button:hover{
 
 /* ========== HOME ========== */
 .home-banner{
-    background-image: url("images/dog-staring.png");
+    background-image: url("../images/dog-staring.png");
     background-repeat: no-repeat;
     /* background-size: cover; */
     background-position: bottom;
@@ -233,7 +233,7 @@ button:hover{
 
 /* ========== CLIENTS ========== */
 .client-banner{
-    background-image: url("images/clients-banner.jpg");
+    background-image: url("../images/clients-banner.jpg");
     height: 300px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -245,7 +245,7 @@ button:hover{
 
 /* ========== ANIMALS ========== */
 .animals-banner{
-    background-image: url("images/animals-banner.png");
+    background-image: url("../images/animals-banner.png");
     height: 300px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -257,7 +257,7 @@ button:hover{
 
 /* ========== ANIMALS ========== */
 .services-banner{
-    background-image: url("images/services-banner.png");
+    background-image: url("../images/services-banner.png");
     height: 300px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -269,7 +269,7 @@ button:hover{
 
 /* ========== BACKGROUNDS ========== */
 .background-dog-staring{
-    background-image: url("/images/dog-staring.png");
+    background-image: url("..//images/dog-staring.png");
     background-repeat: no-repeat;
     background-position: bottom;
 }
