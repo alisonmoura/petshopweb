@@ -5,41 +5,82 @@ body{
     margin: 0px;
 }
 
+textarea:focus, input:focus, button:focus{
+    outline: none;
+}
+
 input{
     width: 100%;
     margin-top: 20px;
     margin-bottom: 20px;
+    padding-bottom: 10px;
     border: none;
-    font-size: 13pt;
+    font-size: 11pt;
     background-color: transparent;
+    border-bottom: solid 2px transparent;
+    transition: all .3s;    
 }
+
+input::-webkit-input-placeholder,
+input:-ms-input-placeholder{
+    font-weight: 300;
+    color: lightgray;
+}    
+
+input:focus{
+    border-bottom: solid 2px #38BF9B;        
+}    
 
 label{
     font-size: 20pt;
     color: gray;
-}
-
-button{
-    background-color: #242121;
-    border: none;
-    color: white;
-    padding: 20px;
-    border-radius: 25px;
-    margin-top: 10p;
-    width: auto;
-    overflow:hidden;
-    max-width: 100px;
-    -webkit-transition: max-width 0.3s ease-in-out;
-    -moz-transition: max-width 0.3s ease-in-out;
-    -o-transition: max-width 0.3s ease-in-out;
-    transition: max-width 0.3s linear;
+    font-weight: 300;
 }
 
 h1{
     text-align: center;
     font-size: 40pt;
     margin-top: 100px;
+    font-weight: 300;
 }
+
+button{
+    border: none;
+    padding: 20px;
+    font-size: 10pt;
+    font-weight: 300;
+}
+
+button:hover{
+    cursor: pointer;
+}    
+
+/* ========== COLORS ========== */
+.btn-round{
+    border-radius: 25px;
+    width: auto;
+    box-sizing: border-box;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s linear;
+    border: solid 2px transparent;    
+}
+
+.btn-round:hover{
+    background: transparent;
+    color: gray;
+    border: solid 2px #38BF9B;
+}
+
+/* ========== COLORS ========== */
+.petshop-primary{
+    background-color: #38BF9B;
+    color: white;    
+}
+.petshop-primary-text{
+    color: #38BF9B;
+}    
 
 /* ========== LOGIN ========== */
 .background-login{
@@ -61,8 +102,9 @@ h1{
 
 /* ========== NAV BAR ========== */
 .nav-bar{
-    background-color: #38BF9B;
-    height: 70px;
+    background-color: transparent;
+    box-shadow: 1px 1px 10px rgba(0,0,0,.3);
+    height: 80px;
     width: 100%;
     box-sizing: border-box;
 }
@@ -88,21 +130,24 @@ h1{
     justify-content: space-around;
     padding: 20px;
 }
+
 .section-image-button div{
     background-color: #38BF9B;
     display: inline-block;
     margin: 20px;
     padding: 30px 80px;
-    border-radius: 30px;
+    border-radius: 100%;
     box-shadow: 1px 1px 10px rgba(0,0,0,.3);
     transition: all .5s;
     height: 150px;
+    width: 100px;
     overflow: hidden;
 }
 
 .section-image-button div:hover{
     box-shadow: 3px 3px 20px rgba(0,0,0,.3);
     transform: scale(1.1);
+    border-radius: 30px;    
     cursor: pointer
 }
 
@@ -119,8 +164,8 @@ h1{
 }  
 
 .section-image-button img{
-    height: 100px;
-    width: auto;
+    height: auto;
+    width: 100px;
     display: block;
     margin: auto;
     transition: all .3s;
@@ -133,11 +178,11 @@ h1{
 
 /* ========== HOME ========== */
 .home-banner{
-    background-image: url("home-banner.jpg");
+    background-image: url("dog-staring.png");
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 500px;
+    /* background-size: cover; */
+    background-position: bottom;
+    height: 300px;
     width: 100%;
 }
 
