@@ -113,6 +113,7 @@ button:hover{
     list-style: none;
     margin: 0px;
     padding-top: 20px;
+    margin-right: 20px;
     float: right;
 }
 
@@ -139,6 +140,24 @@ button:hover{
     margin-top: 20px;
     margin-left: 30px;
     display: inline-block;
+}
+
+.nav-bar .back-button img{
+    display: inline-block;
+}    
+
+.nav-bar .back-button img{
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 35px;
+    height: auto;
+    transition: all .3s;
+    display: inline-block;    
+}
+
+.nav-bar .back-button:hover img{
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 /* ========== SECTION IMAGE BUTTON ========== */
@@ -210,7 +229,7 @@ button:hover{
 /* ========== CLIENTS ========== */
 .client-banner{
     background-image: url("clients-banner.jpg");
-    height: 500px;
+    height: 300px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
