@@ -82,6 +82,55 @@ h1{
     font-weight: 300;
 }
 
+/* ========== SECTION IMAGE BUTTON ========== */
+.section-image-button{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+.section-image-button div{
+    background-color: #38BF9B;
+    display: inline-block;
+    margin: 20px;
+    padding: 30px 80px;
+    border-radius: 30px;
+    box-shadow: 1px 1px 10px rgba(0,0,0,.3);
+    transition: all .5s;
+    height: 150px;
+    overflow: hidden;
+}
+
+.section-image-button div:hover{
+    box-shadow: 3px 3px 20px rgba(0,0,0,.3);
+    transform: scale(1.1);
+    cursor: pointer
+}
+
+.section-image-button p{
+    color: white;
+    font-size: 15pt;
+    font-weight: 300;
+    text-align: center;
+    transition: all .3s;
+}
+
+.section-image-button div:hover p{
+    opacity: 0;
+}  
+
+.section-image-button img{
+    height: 100px;
+    width: auto;
+    display: block;
+    margin: auto;
+    transition: all .3s;
+}
+
+.section-image-button div:hover img{
+    padding-top: 20px;
+    transform: scale(1.5);
+} 
+
 /* ========== HOME ========== */
 .home-banner{
     background-image: url("home-banner.jpg");
@@ -94,38 +143,6 @@ h1{
 
 .home-menu-section{
     margin-top: -100px;
-    display: flex;
-    justify-content: space-around;
-    padding: 20px;
-}
-
-.home-menu-section div{
-    background-color: #38BF9B;
-    display: inline-block;
-    margin: 20px;
-    padding: 30px 80px;
-    border-radius: 30px;
-    box-shadow: 1px 1px 10px rgba(0,0,0,.3);
-    transition: all .5s;
-}
-
-.home-menu-section div:hover{
-    box-shadow: 3px 3px 20px rgba(0,0,0,.3);
-    transform: scale(1.1);
-}
-
-.home-menu-section p{
-    color: white;
-    font-size: 15pt;
-    font-weight: 300;
-    text-align: center;
-}
-
-.home-menu-section img{
-    height: 100px;
-    width: auto;
-    display: block;
-    margin: auto;
 }
 
 /* ========== CLIENTS ========== */
@@ -136,34 +153,6 @@ h1{
     background-size: cover;
     background-position: center;
 }
-
-.client-menu-section div{
-    background-color: #38BF9B;
-    display: inline-block;
-    margin: 20px;
-    padding: 30px 80px;
-    border-radius: 30px;
-    box-shadow: 1px 1px 10px rgba(0,0,0,.3);
-    transition: all .5s;
-}
-
-.client-menu-section p{
-    color: white;
-    font-size: 15pt;
-    font-weight: 300;
-    text-align: center;
-}
-
-.client-menu-section img{
-    height: 100px;
-    width: auto;
-    display: block;
-    margin: auto;
-}
-
 .client-menu-section{
     margin-top: -100px;
-    display: flex;
-    justify-content: space-around;
-    padding: 20px;
 }
