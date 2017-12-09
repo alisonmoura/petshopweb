@@ -273,3 +273,37 @@ button:hover{
     background-repeat: no-repeat;
     background-position: bottom;
 }
+
+/* ========== TABLE ========== */
+.table{
+    margin: 30px auto;
+    border-collapse: collapse;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px rgba(0,0,0,.3);
+}
+.table thead{
+    color: white;
+}
+.table th{
+    font-size: 20pt;
+    padding: 20px;
+    font-weight: 300;
+    padding: 40px 20px;
+    background-color: #38BF9B;
+}
+.table th:nth-child(2n){
+    background-color: rgb(32, 135, 107);
+}
+.table tr{
+    font-weight: 300;
+}  
+.table tr:nth-child(2n){
+    background-color: rgba(0,0,0,.1);
+}   
+.table td{
+    font-size: 15pt;
+    padding: 20px 40px;
+}
+.table button{
+    font-size: 15pt;
+}
