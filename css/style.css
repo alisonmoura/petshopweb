@@ -273,7 +273,13 @@ button:hover{
     background-repeat: no-repeat;
     background-position: bottom;
 }
-
+.products-banner{
+    background-image: url("../images/products-background.jpg");
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+}
 /* ========== TABLE ========== */
 .table{
     margin: 30px auto;
