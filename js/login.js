@@ -6,7 +6,7 @@ function login(){
     if(email != "" && senha != ""){
         return true;
     }else{
-        window.alert("Digite seu email e senha");
+        window.alert("Algo deu errado, redigite seu e-mail e senha");
         return false;
     }
 
