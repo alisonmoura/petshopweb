@@ -75,6 +75,7 @@ Nome: String
 ### Evento
 Data: DateTime
 Servico: Servico
+Funcionario: Funcionario
 
 ## Telas
 + Login
