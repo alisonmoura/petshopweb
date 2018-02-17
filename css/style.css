@@ -373,9 +373,9 @@ button:hover{
     color: white;
 }
 .table-products th{
-    font-size: 22pt;
-    padding: 12px;
-    font-weight: 300;
+    font-size: 18pt;
+    padding: 15px;
+    font-weight: 500;
     background-color: #38BF9B;
 }
 .table-products th:nth-child(2n){
@@ -388,15 +388,18 @@ button:hover{
     background-color: rgba(0,0,0,.1);
 }   
 .table-products td{
-    font-size: 14pt;
-    padding: 10px 50px 10px 50px;
+    font-size: 13pt;
+    padding: 5px 15px 5px 15px;
 }
 .table-products button{
-    font-size: 15pt;
+    font-size: 12pt;
+    font-weight: 450;
     background-color: transparent;
 }
 
 .table-products tbody tr td button:hover{
     transform: scale(1.1);
-    transition: .3s;
+    transition: .2s;
+    font-weight: 550;
+    color: rgb(22, 168, 124);
 }
