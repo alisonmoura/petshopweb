@@ -59,6 +59,37 @@ button:hover{
     cursor: pointer;
 }    
 
+/* ========== MARGIN ========== */
+.margin-10{
+    margin: 10px;
+}
+
+.margin-r-10{
+    margin-right: 10px;
+}
+.margin-r-20{
+    margin-right: 20px;
+}
+
+.margin-t-10{
+    margin-top: 10px;
+}
+.margin-t-20{
+    margin-top: 20px;
+}
+.margin-t-25{
+    margin-top: 25px;
+}
+.margin-t-30{
+    margin-top: 30px;
+}
+
+/* ========== ALIGN ========== */
+
+.right{
+    float: right;
+}
+
 /* ========== COLORS ========== */
 .btn-round{
     border-radius: 25px;
@@ -106,7 +137,8 @@ button:hover{
 
 /* ========== NAV BAR ========== */
 .nav-bar{
-    background-color: transparent;
+    position: fixed;
+    background-color: white;
     box-shadow: 1px 1px 10px rgba(0,0,0,.3);
     height: 80px;
     width: 100%;
@@ -286,7 +318,7 @@ button:hover{
 
 /* ===== FORM ===== */  
 .form{
-    width: 300px;
+    width: 70%;
     padding: 20px;
     margin-top: 80px;
     margin-left: auto;
@@ -326,6 +358,7 @@ button:hover{
 }
 /* ========== TABLE ========== */
 .table {
+    width: 73%;
     margin: 30px auto;
     border-collapse: collapse;
     border-radius: 5px;
@@ -351,7 +384,7 @@ button:hover{
 }   
 .table td{
     font-size: 14pt;
-    padding: 10px 50px 10px 50px;
+    padding: 10px 20px;
 }
 .table button{
     font-size: 15pt;
@@ -362,44 +395,19 @@ button:hover{
     transform: scale(1.1);
     transition: .3s;
 }
-/* ========== TABLE-PRODUCT ========== */
-.table-products {
-    margin: -30px auto;
-    border-collapse: collapse;
-    border-radius: 5px;
-    box-shadow: 1px 1px 10px rgba(0,0,0,.8);
-}
-.table-products thead{
-    color: white;
-}
-.table-products th{
-    font-size: 18pt;
-    padding: 15px;
-    font-weight: 500;
-    background-color: #38BF9B;
-}
-.table-products th:nth-child(2n){
-    background-color: rgb(22, 168, 124);
-}
-.table-products tr{
-    font-weight: 300;
-}  
-.table-products tr:nth-child(2n){
-    background-color: rgba(0,0,0,.1);
-}   
-.table-products td{
-    font-size: 13pt;
-    padding: 5px 15px 5px 15px;
-}
-.table-products button{
-    font-size: 12pt;
-    font-weight: 450;
-    background-color: transparent;
+
+/* ========== HIDE ========== */
+.hide{
+    display: none;
 }
 
-.table-products tbody tr td button:hover{
-    transform: scale(1.1);
-    transition: .2s;
-    font-weight: 550;
-    color: rgb(22, 168, 124);
+/* ========== FLOAT BUTTON ========== */
+.float-button{
+    background-color: #38BF9B;
+    padding: 15px;
+    border-radius: 30px;
+    padding-top: 25px;
+}
+.float-button.icon img{
+    width: 25px;
 }
