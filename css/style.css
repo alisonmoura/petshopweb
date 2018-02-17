@@ -285,7 +285,7 @@ button:hover{
 }
 
 /* ===== FORM ===== */  
-.form-service{
+.form{
     width: 300px;
     padding: 20px;
     margin-top: 80px;
@@ -296,7 +296,7 @@ button:hover{
     border-radius: 8px;
 }
 
-.form-service div{
+.form div{
     display: inline-block
 }
 
