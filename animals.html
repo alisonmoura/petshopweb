@@ -1,28 +1,55 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
+    <title>Animais</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
-    <title>Animais</title>
+    <script src="js/controller/animals.controller.js"></script>
+
 </head>
+
 <body>
-    
+
     <nav class="nav-bar">
-        <a class="back-button" href="home.html"><img src="images/left-arrow.svg"></a>
+        <a class="back-button" href="home.html">
+            <img src="images/left-arrow.svg">
+        </a>
         <h1 class="title">Animais</h1>
+        <div class="right margin-t-30 margin-r-20" onclick="animalsController.showForm()">
+            <a class="float-button icon">
+                <img src="images/form.svg">
+            </a>
+        </div>
     </nav>
-    
+
     <section class="animals-banner">
     </section>
+
+    <form class="hide form">
+
+        <label for="inputAnimal">Animal</label>
+        <input id="inputAnimal" type="text" placeholder="Animal">
+
+        <label for="inputRaça">Raça</label>
+        <input id="inputRaça" type="text" placeholder="Raça">
+
+        <label for="inputTutor">Tutor</label>
+        <input id="inputTutor" type="text" placeholder="Tutor">
+
+        <button class="button-service" type="button" onclick="animalsController.save()">Salvar</button>
+        <button class="button-service" type="reset" onclick="animalsController.cancel()">Cancelar</button>
+
+    </form>
 
 
     <section>
         <table class="table table-products">
             <thead>
                 <th>Animal</th>
-                <th>Raça</th> 
+                <th>Raça</th>
                 <th>Tutor</th>
                 <th>Ações</th>
             </thead>
@@ -57,7 +84,7 @@
                     <td>
                         Jose
                     </td>
-                    <td>    
+                    <td>
                         <button>Editar</button>
                         <button>Remover</button>
                         <button>Detalhes</button>
@@ -111,25 +138,13 @@
                         <button>Detalhes</button>
                     </td>
                 </tr>
-                
+
             </tbody>
         </table>
     </section>
-    
-    <form action="services.html" class="form">
-        
-        <label for= "inputAnimal">Animal</label>
-        <input id="inputAnimal" type="text" placeholder="Animal">
-        
-        <label for= "inputRaça">Raça</label>
-        <input id="inputRaça" type="text" placeholder="Raça">
-        
-        <label for= "inputTutor">Tutor</label>
-        <input id="inputTutor" type="text" placeholder="Tutor">
-        
-    <button class="button-service" type="submit">Salvar</button>
-    
-</form>
+
+
 
 </body>
-</html>     
+
+</html>
