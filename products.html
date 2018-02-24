@@ -5,19 +5,38 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="css/style.css" rel="stylesheet">
+        <script src="js/controller/controller.products.js"></script>
     </head>
     <body>
         <nav class="nav-bar">
             <a class="back-button" href="home.html"><img src="images/left-arrow.svg"></a>
-            <ul>
-                <a href=""><li>Configurações</li></a>
-                <a href="index.html"><li>Sair</li></a>
-            </ul>
             <h1 class="title">Produtos</h1>
-        </nav> 
-    
+            <div class="right margin-t-30 margin-r-20" onclick="productController.showForm()">
+                <a class="float-button icon">
+                    <img src="images/form.svg">
+                </a>
+            </div>
+        </nav>        
     <section class="products-banner">
     </section>
+    <form action="products.html" class="form hide">
+        <label for= "inputID">ID</label>
+        <input id="inputID" type="number" placeholder="ID">
+        
+        <label for= "inputProduto">Produto</label>
+        <input id="inputProduto" type="text" placeholder="Produto">
+        
+        <label for= "inputMarca">Marca</label>
+        <input id="inputMarca" type="text" placeholder="Marca">
+
+        <label for= "inputClasse">Classe</label>
+        <input id="inputClasse" type="text" placeholder="Classe">
+        
+        <label for= "inputValor">Valor</label>
+        <input id="inputValor" type="number" placeholder="Valor">
+    <button class="button-service" type="submit">Salvar</button>
+    <button class="button-service" type="reset" onclick="clienteController.cancel()">Cancelar</button>
+</form>
     <table class=" table table-products">
         <thead>
         <th>
@@ -55,25 +74,5 @@
             </tr>
         </tbody>
     </table>
-    <form action="products.html" class="form">
-        
-        <label for= "inputID">ID</label>
-        <input id="inputID" type="number" placeholder="ID">
-        
-        <label for= "inputProduto">Produto</label>
-        <input id="inputProduto" type="text" placeholder="Produto">
-        
-        <label for= "inputMarca">Marca</label>
-        <input id="inputMarca" type="text" placeholder="Marca">
-
-        <label for= "inputClasse">Classe</label>
-        <input id="inputClasse" type="text" placeholder="Classe">
-        
-        <label for= "inputValor">Valor</label>
-        <input id="inputValor" type="number" placeholder="Valor">
-    <button class="button-service" type="submit">Salvar</button>
-    
-</form>
-
     </body>
 </html>
