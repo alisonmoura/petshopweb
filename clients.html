@@ -6,15 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
-    <script>
-        function showForm(){
-            document.querySelector("form").classList.remove("hide");
-        }
-
-        function save(){
-            document.querySelector("form").classList.add("hide");
-        }
-    </script>
+    <script src="js/controller/clients.controller.js"></script>
 </head>
 
 <body>
@@ -24,7 +16,7 @@
             <img src="images/left-arrow.svg">
         </a>
         <h1 class="title">Clientes</h1>
-        <div class="right margin-t-30 margin-r-20" onclick="showForm()">
+        <div class="right margin-t-30 margin-r-20" onclick="clienteController.showForm()">
             <a class="float-button icon">
                 <img src="images/form.svg">
             </a>
@@ -42,31 +34,32 @@
         <label for="inputAnimal">Email</label>
         <input id="inputDescricao" type="text" placeholder="Animal">
 
-        <label for="inputTipo">Celular</label>
-        <input id="inputTipo" type="text" placeholder="Tipo">
+        <label for="inputCelular">Celular</label>
+        <input id="inputCelular" type="text" placeholder="Tipo">
 
         <label for="inputValor">CPF</label>
         <input id="inputValor" type="text" placeholder="CPF">
 
-        <label for="inputTipo">Rua</label>
-        <input id="inputTipo" type="text" placeholder="Rua">
+        <label for="inputRua">Rua</label>
+        <input id="inputRua" type="text" placeholder="Rua">
 
-        <label for="inputTipo">Bairro</label>
-        <input id="inputTipo" type="text" placeholder="Bairro">
+        <label for="inputBairro">Bairro</label>
+        <input id="inputBairro" type="text" placeholder="Bairro">
 
-        <label for="inputTipo">Cidade</label>
-        <input id="inputTipo" type="text" placeholder="Cidade">
+        <label for="inputCidade">Cidade</label>
+        <input id="inputCidade" type="text" placeholder="Cidade">
 
-        <label for="inputTipo">Estado</label>
-        <input id="inputTipo" type="text" placeholder="Estado">
+        <label for="inputEstado">Estado</label>
+        <input id="inputEstado" type="text" placeholder="Estado">
 
-        <label for="inputTipo">Numero</label>
-        <input id="inputTipo" type="text" placeholder="Numero">
+        <label for="inputNumero">Numero</label>
+        <input id="inputNumero" type="text" placeholder="Numero">
 
-        <label for="inputTipo">CEP</label>
-        <input id="inputTipo" type="text" placeholder="CEP">
+        <label for="inputCep">CEP</label>
+        <input id="inputCep" type="text" placeholder="CEP">
 
-        <button class="button-service" type="button" onclick="save()">Salvar</button>
+        <button class="button-service" type="button" onclick="clienteController.save()">Salvar</button>
+        <button class="button-service" type="button" onclick="clienteController.cancel()">Cancelar</button>
 
     </form>
 

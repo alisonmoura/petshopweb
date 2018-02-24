@@ -264,7 +264,7 @@ button:hover{
 }
 
 .home-menu-section{
-    margin-top: 10px;
+    margin-top: 0px;
 }
 
 /* ========== CLIENTS ========== */
@@ -410,4 +410,9 @@ button:hover{
 }
 .float-button.icon img{
     width: 25px;
+}
+
+/* ========== SPACER ========== */
+.spacer{
+    height: 80px;
 }
