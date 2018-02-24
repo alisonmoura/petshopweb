@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/controller/services.controller.js"></script>
     <title>Petshop Web - Home</title>
 </head>
 <body>
@@ -12,11 +13,34 @@
     <nav class="nav-bar">
         <a class="back-button" href="home.html"><img src="images/left-arrow.svg"></a>
         <h1 class="title">Serviços</h1>
+
+        <div class="right margin-t-30 margin-r-20" onclick="servicesController.showForm()">
+            <a class="float-button icon">
+                <img src="images/form.svg">
+            </a>
+        </div>
     </nav>
-    
+
     <section class="services-banner">
     </section>
     
+    <form action="services.html" class="form hide">
+        
+        <label for= "inputNome">Nome</label>
+        <input id="inputNome" type="text" placeholder="Nome">
+        
+        <label for= "inputAnimal">Animal</label>
+        <input id="inputDescricao" type="text" placeholder="Animal">
+        
+        <label for= "inputTipo">Tipo</label>
+        <input id="inputTipo" type="text" placeholder="Tipo">
+        
+        <label for= "inputValor">Valor</label>
+        <input id="inputValor" type="number" placeholder="Valor">
+    <button class="button-service" type="submit" onclick="servicesController.save()">Salvar</button>
+    <button class="button-service" type="reset" onclick="servicesController.cancel()">Cancelar</button>
+</form>
+
     <section>
             <table class="table table-products">
                 <thead>
@@ -65,25 +89,5 @@
                 </tbody>
             </table>
         </section>
-
-    <form action="services.html" class="form">
-        
-            <label for= "inputNome">Nome</label>
-            <input id="inputNome" type="text" placeholder="Nome">
-            
-            <label for= "inputAnimal">Animal</label>
-            <input id="inputDescricao" type="text" placeholder="Animal">
-            
-            <label for= "inputTipo">Tipo</label>
-            <input id="inputTipo" type="text" placeholder="Tipo">
-            
-            <label for= "inputValor">Valor</label>
-            <input id="inputValor" type="number" placeholder="Valor">
-        <button class="button-service" type="submit">Salvar</button>
-        
-    </form>
-    
-    
-
 </body>
 </html>
