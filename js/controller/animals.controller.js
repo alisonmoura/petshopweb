@@ -4,21 +4,21 @@ var app = new Vue({
         showForm: false,
         animals: [
             {
-                animal: "Jão da Silva",
-                raca: "jao@gmail.com",
-                tutor: "67 99999999",
+                animal: "Rex",
+                raca: "Pincher",
+                tutor: "jão",
                 
             },
             {
-                animal: "Maria da Silva",
-                raca: "mar@gmail.com",
-                tutor: "67 89999999",
+                animal: "Toto",
+                raca: "Pitbull",
+                tutor: "Maria",
                 
             },
             {
-                animal: "Zé da Silva",
-                raca: "ze@gmail.com",
-                tutor: "67 99599999",
+                animal: "LouroZe",
+                raca: "Papagaio",
+                tutor: "Ze",
                 
             }
         ]
