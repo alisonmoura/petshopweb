@@ -30,13 +30,13 @@
         <form class="form" v-if="showForm">
 
             <label for="inputNome">Nome</label>
-            <input id="inputNome" type="text" placeholder="Nome">
+            <input id="inputNome" v-model="client.name" type="text" placeholder="Nome">
 
             <label for="inputEmail">Email</label>
-            <input id="inputEmail" type="email" placeholder="Email">
+            <input id="inputEmail" v-model="client.email" type="email" placeholder="Email">
 
             <label for="inputCelular">Celular</label>
-            <input id="inputCelular" type="tel" placeholder="Celular">
+            <input id="inputCelular" v-model="client.cel" type="tel" placeholder="Celular">
 
             <label for="inputCpf">CPF</label>
             <input id="inputCpf" type="text" placeholder="CPF">
@@ -59,8 +59,9 @@
             <label for="inputCep">CEP</label>
             <input id="inputCep" type="text" placeholder="CEP">
 
-            <button class="button-service" type="button" onclick="clienteController.save()">Salvar</button>
-            <button class="button-service" type="reset" onclick="clienteController.cancel()">Cancelar</button>
+            <button class="button-service" type="button" v-on:click="save">Salvar</button>
+            <button class="button-service" type="reset" v-on:click="clean">Limpar</button>
+            <button class="button-service" type="reset" v-on:click="cancel">Cancelar</button>
 
         </form>
 
@@ -75,13 +76,14 @@
                 </thead>
                 <tbody>
                     <tr v-for="client in clients">
+                        <td>{{client.id}}</td>
                         <td>{{client.name}}</td>
                         <td>{{client.email}}</td>
                         <td>{{client.cel}}</td>
                         <td>{{client.cpf}}</td>
                         <td>
                             <button>Visualizar</button>
-                            <button>Editar</button>
+                            <button v-on:click="edit(client)">Editar</button>
                             <button>Remover</button>
                         </td>
                     </tr>
