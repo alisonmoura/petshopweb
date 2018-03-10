@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
     <script src="node_modules/vue/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue-resource@1.5.0"></script>    
 </head>
 
 <body>
@@ -39,25 +40,27 @@
             <input id="inputCelular" v-model="client.cel" type="tel" placeholder="Celular">
 
             <label for="inputCpf">CPF</label>
-            <input id="inputCpf" type="text" placeholder="CPF">
-
-            <label for="inputRua">Rua</label>
-            <input id="inputRua" type="text" placeholder="Rua">
-
-            <label for="inputBairro">Bairro</label>
-            <input id="inputBairro" type="text" placeholder="Bairro">
-
-            <label for="inputCidade">Cidade</label>
-            <input id="inputCidade" type="text" placeholder="Cidade">
-
-            <label for="inputEstado">Estado</label>
-            <input id="inputEstado" type="text" placeholder="Estado">
-
-            <label for="inputNumero">Numero</label>
-            <input id="inputNumero" type="text" placeholder="Numero">
+            <input id="inputCpf" v-model="client.cpf" type="text" placeholder="CPF">
 
             <label for="inputCep">CEP</label>
-            <input id="inputCep" type="text" placeholder="CEP">
+            <input id="inputCep" v-model="client.cep" type="text" placeholder="CEP">
+
+            <button type="button" @click="getAddress">Buscar por CEP</button>
+
+            <label for="inputRua">Rua</label>
+            <input id="inputRua" v-model="client.street" type="text" placeholder="Rua">
+
+            <label for="inputBairro">Bairro</label>
+            <input id="inputBairro" v-model="client.neighborhood" type="text" placeholder="Bairro">
+
+            <label for="inputCidade">Cidade</label>
+            <input id="inputCidade" v-model="client.city" type="text" placeholder="Cidade">
+
+            <label for="inputEstado">Estado</label>
+            <input id="inputEstado" v-model="client.state" type="text" placeholder="Estado">
+
+            <label for="inputNumero">Numero</label>
+            <input id="inputNumero" v-model="client.number" type="text" placeholder="Numero">
 
             <button class="button-service" type="button" v-on:click="save">Salvar</button>
             <button class="button-service" type="reset" v-on:click="clean">Limpar</button>

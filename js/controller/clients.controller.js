@@ -2,7 +2,13 @@ var app = new Vue({
     el: '#app',
     data: {
         showForm: false,
-        client: {},
+        client: {
+            cep:"",
+            street:"",
+            neighborhood:"",
+            city:"",
+            state:""
+        },
         clients: [
             {
                 id: 1,
@@ -54,6 +60,26 @@ var app = new Vue({
         edit: function (client) {
             this.showForm = true;
             this.client = client;
+        },
+        getAddress: function(){
+
+            var self = this; // Guardando a referencia do "this" do Vuejs (objeto "data")
+            // Enviar HTTP Request para https://viacep.com.br/ws/CEP/json/
+            var promessa = this.$http.get("https://viacep.com.br/ws/" + this.client.cep + "/json/");
+
+            promessa.then(success, error);
+
+            function success(response){
+                self.client.street = response.body.logradouro;
+                self.client.neighborhood = response.body.bairro;
+                self.client.city = response.body.localidade;
+                self.client.state = response.body.uf;
+            }
+
+            function error(){
+                alert("Erro!");
+            }
+            
         }
     }
 })
